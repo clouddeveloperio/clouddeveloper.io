@@ -1,5 +1,18 @@
-.ui.footer.segment {
-	bottom: 0;
-	position: absolute;
-	width: 100%;
+footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+footer a {
+  color: orange;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: -40px;
 }

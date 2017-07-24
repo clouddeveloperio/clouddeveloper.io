@@ -1,3 +1,23 @@
-.ui.menu .item img.logo {
-	margin-right: 1.5em;
+.main-header {
+  position: relative;
+  height: 350px;
+  background-image: url('/assets/images/whitebackground.png');
+  background-size: auto contain;
+  position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 3;}
+
+.logo{
+  height: 30px;
+  width: 100%;
+  background-image: url('/assets/images/logo.png');
+  background-repeat: no-repeat;
+  background-size: 650px 30px;
+  background-position: center;
+  position: absolute;
+  margin-top: -15px;
+  top: 50%;
+
 }
