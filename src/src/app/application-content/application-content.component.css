@@ -32,7 +32,7 @@ hr {
 
 .coding-fun {
   height: 170px;
-  background-image: url('/assets/images/mainbody2.png');
+  background-image: url('../../assets/images/mainbody2.png');
   background-size: auto contain;
   background-repeat: no-repeat;
 }
