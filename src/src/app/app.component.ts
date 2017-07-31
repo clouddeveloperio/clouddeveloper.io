@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppInsightsService } from './services/app-insights.service';
 
 declare var $: any;
 
@@ -9,6 +10,10 @@ declare var $: any;
 })
 export class AppComponent implements OnInit {
   title = 'clouddeveloper.io';
+
+  constructor(appInsightsService: AppInsightsService) {
+    appInsightsService.logPageView('Home');
+  }
 
   ngOnInit(): void {
     $(window).scroll(function(){

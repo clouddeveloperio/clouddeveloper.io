@@ -6,6 +6,7 @@ import { ApplicationHeaderComponent } from './application-header/application-hea
 import { ApplicationContentComponent } from './application-content/application-content.component';
 import { UserNotificationComponent } from './application-content/user-notification.component';
 import { ApplicationFooterComponent } from './application-footer/application-footer.component';
+import { AppInsightsService } from './services/app-insights.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ApplicationFooterComponent } from './application-footer/application-foo
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AppInsightsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
