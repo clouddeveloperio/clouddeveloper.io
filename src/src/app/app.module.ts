@@ -7,6 +7,7 @@ import { ApplicationContentComponent } from './application-content/application-c
 import { ApplicationFooterComponent } from './application-footer/application-footer.component';
 import { AppInsightsService } from './services/app-insights.service';
 import { PlaylistService } from './services/playlist.service';
+import { VisitorCounterService } from './services/visitor-counter.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { PlaylistService } from './services/playlist.service';
   imports: [
     BrowserModule
   ],
-  providers: [AppInsightsService, PlaylistService],
+  providers: [AppInsightsService, PlaylistService, VisitorCounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
