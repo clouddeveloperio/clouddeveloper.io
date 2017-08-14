@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "table",
+      "tableName": "functioncounter",
+      "take": 50,
+      "connection": "clouddeveloperiofunc_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
